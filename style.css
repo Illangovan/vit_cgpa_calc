@@ -29,6 +29,30 @@ display: flex;
 {
 background-color: black;
 height:800px;
+justify-content: center;
+}
+.main input{
+    outline: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+.main input:hover{
+    border-bottom: 1px solid blue;
+}
+.main>div{
+    padding: 50px 200px;
+}
+.main th{
+    color: white;
+    font-size:larger;
+    padding-right: 30px;
+}
+.main td{
+    color: white;
+    font-size: larger;
+    padding-right: 30px;
+    padding-top: 20px;
 }
 .footer{
 background-color: #3C3633;
@@ -46,5 +70,23 @@ height:80px;
         height:50px;
         padding-left:30px;
         padding-top:13px;
+    }
+    .main th{
+        font-size: small;
+        padding-right:20px;
+    }
+    .main input{
+        width: 50px;
+        color: white;
+        outline: none;
+        background:transparent;
+        border: 0;
+        border-bottom: 1px solid white;
+    }
+    .main input:hover{
+        border: 1px solid blue;
+    }
+    .main>div{
+        padding: 50px 100px;
     }
 }
