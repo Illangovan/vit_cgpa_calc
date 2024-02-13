@@ -4,31 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA CALCULATOR</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-   <div class="container">
-    <div class="header">
-        <img src="calc.png" alt="icon">
-        <h1>CGPA CALCULATOR</h1>
+    <nav>
+        <a href="index.html">
+            <img src="./img/calc.png" alt="logo" class="logo">
+        </a>
+        <h3 class="title-text"> CGPA Calculator</h3>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="overlayOff()">
+        <div id="overlay-text"></div>
+
     </div>
-    <div class="main">
-        <div>
-     <table>
-        <tr>
-            <th>SEM</th>
-            <th>CREDITS</th>
-            <th>GPA</th>
-        </tr>
-        <tr>
-            <td>sem1</td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-     </table>
-    </div>
-    </div>
-    <div class="footer"></div>
-   </div>
+    <form action="">
+        <table id="semInput">
+            <thead>
+                <th WIDTH="5">Sem</th>
+                <th>Credits</th>
+                <th>GPA</th>
+            </thead>
+            <tr>
+                <td>1st</td>
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+            <tr>
+                <td>2nd</td>
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+            <tr>
+                <td>3rd</td>
+
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+            <tr>
+                <td>4th</td>
+
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+            <tr>
+                <td>5th</td>
+
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+            <tr>
+                <td>6th</td>
+
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+            <tr>
+                <td>7th</td>
+
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+            <tr>
+                <td>8th</td>
+
+                <td>
+                    <input type="number" placeholder="Enter credit" class="credit">
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter GPA" class="gpa">
+                </td>
+            </tr>
+        </table>
+
+        <div class="button-group">
+            <button type="button" onClick="handleClick()" class="btn" id="submit-btn">Calculate</button>
+            <button type="reset" class="btn btn-red">Reset</button>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <footer>Copyright © Illango | 2024 | All rights reserved.
+        <div id="contact">
+            <a href="https://github.com/Illangovan"><img src="img/github.png" alt="github-icon"></a>
+            <a href="https://www.linkedin.com/in//"><img src="img/linkedin.png"
+                    alt="linkedin-icon"></a>
+
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
